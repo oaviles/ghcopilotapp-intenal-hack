@@ -76,7 +76,7 @@ Welcome to the **GitHub Copilot App** Mini-Hackathon. This event is designed to 
   * [GitHub Copilot App Review & Next Steps](https://github-samples.github.io/copilot-workshops/app/8-review/)
 
 ---
-## Challenge 8 *(Optional)*: Automate Recurring Tasks with Copilot Automations
+## Challenge 6 *(Optional)*: Automate Recurring Tasks with Copilot Automations
 * **Title**: Scheduling and Running Copilot Automations for Recurring Team Tasks
 * **Challenge Description**: 
   Use the **Automations** feature in the GitHub Copilot App to define, schedule, and run recurring agent tasks without manual intervention. Create at least one automation that triggers on a schedule or in response to a repository event, configure the tools it may use, and verify it executes correctly—either on demand or at its next scheduled interval.
