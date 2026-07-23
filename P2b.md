@@ -1,17 +1,17 @@
 # GitHub Copilot App Mini-Hackathon
 
-Bienvenido al Mini-Hackathon de **GitHub Copilot App**. Este evento está diseñado para experimentar de primera mano la potencia de la aplicación de escritorio de GitHub Copilot (basada en Copilot CLI), explorando capacidades como sesiones paralelas de agentes, guía con instrucciones personalizadas, integración con servidores MCP (Model Context Protocol) y la automatización de la integración mediante Agent Merge.
+Welcome to the **GitHub Copilot App** Mini-Hackathon. This event is designed to give you hands-on experience with the power of the GitHub Copilot desktop application (built on Copilot CLI), exploring features such as parallel agent sessions, custom instructions, Model Context Protocol (MCP) server integration, and automated pull request merging using Agent Merge.
 
 ---
 
-## Challenge 1: Configuración del Entorno e Instalación de GitHub Copilot App
+## Challenge 1: Environment Setup and GitHub Copilot App Installation
 
-* **Title**: Instalación, Conexión y Exploración del Workspace
+* **Title**: Installation, Workspace Connection, and Exploration
 * **Challenge Description**: 
-  Configura tu entorno local clonando el repositorio de pruebas de Tailspin Toys e instalando la aplicación de escritorio de GitHub Copilot. Conecta tu repositorio al workspace de la aplicación para habilitar la interacción con agentes, revisar el backlog inicial y estar listo para la ejecución de tareas.
+  Set up your local environment by cloning the Tailspin Toys sample repository and installing the GitHub Copilot desktop application. Connect your repository to the app's workspace to enable agent interactions, review the initial backlog, and prepare for task execution.
 * **Challenge Scenario**: 
-  Eres un desarrollador que se une al equipo de desarrollo del e-commerce Tailspin Toys. El equipo acaba de adoptar la nueva **GitHub Copilot App** para acelerar la entrega de software mediante desarrollo guiado por agentes. Tu primera misión es preparar tu workspace local, enlazar el proyecto y realizar un recorrido por la interfaz de la aplicación para comprender la estructura de las sesiones y la gestión de issues/PRs integrados.
-* **Suggested time to solve**: 20 minutos
+  You are a software developer joining the Tailspin Toys e-commerce team. The team has just adopted the new **GitHub Copilot App** to accelerate delivery through agent-driven development. Your first mission is to set up your local workspace, link the project, and take a tour of the application interface to understand session structures and integrated issue/PR management.
+* **Suggested time to solve**: 20 minutes
 * **Resources**:
   * [Prerequisites - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/0-prerequisites/)
   * [Install the Copilot App - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/1-install-copilot-app/)
@@ -19,42 +19,42 @@ Bienvenido al Mini-Hackathon de **GitHub Copilot App**. Este evento está diseñ
 
 ---
 
-## Challenge 2: Tu Primera Sesión de Agente y Cambio Rápido
+## Challenge 2: Your First Agent Session and Quick Change
 
-* **Title**: Implementación de Rating por Estrellas y Primer Pull Request
+* **Title**: Implementing Star Ratings and Submitting Your First Pull Request
 * **Challenge Description**: 
-  Inicia una sesión de agente autónomo dentro de GitHub Copilot App para solicitar la adición de una funcionalidad de evaluación con estrellas (star rating) en los componentes de productos del proyecto Tailspin Toys. Permite que el agente genere los cambios de código necesarios y envía tu primer Pull Request directamente desde la app.
+  Start an autonomous agent session inside the GitHub Copilot App to request the addition of a star rating component to the Tailspin Toys product view. Allow the agent to generate the necessary code changes and submit your first Pull Request directly from the app.
 * **Challenge Scenario**: 
-  El equipo de producto ha solicitado incluir una representación visual de calificaciones por estrellas en la lista de productos de la tienda. En lugar de escribir el componente desde cero, utilizarás una sesión de agente en GitHub Copilot App para delegar la implementación, revisar las modificaciones propuestas en el diff integrado de la app y publicar la Pull Request correspondiente.
-* **Suggested time to solve**: 20 minutos
+  The product team requested a visual star rating display on the product list page. Instead of writing the component from scratch, you will use an agent session in the GitHub Copilot App to delegate the implementation, review the proposed diffs directly within the workspace, and submit the corresponding Pull Request.
+* **Suggested time to solve**: 20 minutes
 * **Resources**:
   * [Running your first agent session - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/2-add-star-rating/)
   * [GitHub Copilot App Documentation](https://docs.github.com/copilot/concepts/agents/github-copilot-app)
 
 ---
 
-## Challenge 3: Guía del Agente con Custom Instructions
+## Challenge 3: Guiding the Agent with Custom Instructions
 
-* **Title**: Estandarización de Documentación mediante Instrucciones Personalizadas
+* **Title**: Standardizing Documentation and Code with Custom Instructions
 * **Challenge Description**: 
-  Aplica un estándar de documentación y código en el proyecto mediante el uso de instrucciones personalizadas (`.github/copilot-instructions.md` o configuración de instrucciones de repositorio). Configura al agente para que siga estas reglas al resolver un issue del backlog y valida que las respuestas y el código generado se apeguen estrictamente al estándar definido.
+  Enforce code and documentation standards across the project using custom instructions (`.github/copilot-instructions.md` or repository instruction settings). Configure the agent to follow these rules when resolving a backlog issue, and verify that the generated code and responses strictly adhere to the defined standards.
 * **Challenge Scenario**: 
-  El arquitecto de software del equipo ha definido nuevas normas organizacionales para la documentación y estilo del código en TypeScript/React. Para evitar revisiones manuales repetitivas, debes instruir a Copilot sobre estas reglas mediante un archivo de *Custom Instructions*, de modo que cualquier tarea futura realizada por el agente respete de forma automática las directrices del proyecto.
-* **Suggested time to solve**: 25 minutos
+  The lead architect defined new organizational standards for documentation and TypeScript/React code style. To avoid repetitive manual code reviews, you must instruct Copilot on these rules via a *Custom Instructions* file so that any future task executed by the agent automatically aligns with the project guidelines.
+* **Suggested time to solve**: 20 minutes
 * **Resources**:
   * [Guiding Copilot with custom instructions - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/3-custom-instructions/)
   * [Adding custom instructions for GitHub Copilot](https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot)
 
 ---
 
-## Challenge 4: Desarrollo de Feature Completa y Validación con MCP Playwright
+## Challenge 4: Full Feature Development and Validation with Playwright MCP
 
-* **Title**: Desarrollo Autónomo de Filtrado de Productos y Testing con MCP
+* **Title**: Autonomous Product Filtering Development and Testing with MCP
 * **Challenge Description**: 
-  Utiliza el modo Autopilot/Plan dentro de la app para construir un sistema completo de filtrado de productos. Posteriormente, conecta el servidor MCP (Model Context Protocol) de Playwright a la aplicación para permitir que el agente explore la interfaz en un navegador real y ejecute pruebas end-to-end de verificación sobre la nueva funcionalidad.
+  Use the Plan and Autopilot modes within the app to build a full product filtering system. Next, connect the Playwright MCP (Model Context Protocol) server to the application to allow the agent to launch a real browser and run end-to-end verification tests against the newly built feature.
 * **Challenge Scenario**: 
-  Los usuarios de Tailspin Toys necesitan filtrar los juguetes por categoría y rango de precio. Esta es una funcionalidad de múltiples componentes. Usarás las capacidades de planificación de GitHub Copilot App para desglosar y desarrollar el filtro de forma transparente. Una vez implementado, aprovecharás el servidor MCP de Playwright integrado en la app para que el propio agente abra el navegador, interactúe con la app web y certifique que el filtro funciona correctamente.
-* **Suggested time to solve**: 30 minutos
+  Tailspin Toys customers need to filter products by category and price range. Because this feature spans multiple components, you will leverage the planning capabilities of the GitHub Copilot App to breakdown and develop the feature seamlessly. Once implemented, you will use the integrated Playwright MCP server to let the agent launch the browser, interact with the web app, and verify that the filter functions as expected.
+* **Suggested time to solve**: 30 minutes
 * **Resources**:
   * [Building a feature with Autopilot - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/4-build-filtering/)
   * [Testing with Playwright MCP - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/5-mcp-playwright/)
@@ -62,14 +62,14 @@ Bienvenido al Mini-Hackathon de **GitHub Copilot App**. Este evento está diseñ
 
 ---
 
-## Challenge 5: Automatización de Integración con Agent Merge y Lienzos de Trabajo
+## Challenge 5: Continuous Integration with Agent Merge and Work Canvases
 
-* **Title**: Integración Continua con Agent Merge y Planificación en Canvases
+* **Title**: Automated PR Integration via Agent Merge and Planning with Canvases
 * **Challenge Description**: 
-  Aprovecha la funcionalidad **Agent Merge** de GitHub Copilot App para solucionar conflictos, ejecutar rebase, resolver fallas en el pipeline de CI y fusionar el Pull Request de filtrado sin intervención manual compleja. Finalmente, crea un Canvas compartido para mapear los siguientes pasos y tareas recurrentes del proyecto.
+  Leverage the **Agent Merge** feature in the GitHub Copilot App to handle merge conflicts, run rebases, fix CI failures, and merge the product filtering Pull Request without manual intervention. Finally, create a shared Canvas to map out future iteration steps and recurring automation tasks.
 * **Challenge Scenario**: 
-  Tu PR de filtrado tiene conflictos con la rama principal y requiere ajustes en las pruebas de integración tras los últimos cambios del equipo. En lugar de resolver el rebase y corregir los tests manualmente, encargas a **Agent Merge** la gestión del PR. Observa cómo el agente navega el proceso de revisión, corrige el CI y realiza el merge. Para finalizar, organizas la planificación de la iteración creando un Canvas interactivo dentro del workspace.
-* **Suggested time to solve**: 25 minutos
+  Your product filtering PR has conflicts with the main branch and requires updating integration tests due to recent team updates. Instead of manually resolving rebases and fixing tests, assign **Agent Merge** to shepherd the PR through review, fix CI issues, and merge it. Wrap up by organizing your team's workflow using an interactive Canvas workspace.
+* **Suggested time to solve**: 20 minutes
 * **Resources**:
   * [Merging with Agent Merge - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/6-agent-merge/)
   * [Planning with canvases - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/7-canvases/)
