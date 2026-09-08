@@ -1,99 +1,228 @@
 # GitHub Copilot App Mini-Hackathon
 
-Welcome to the **GitHub Copilot App** Mini-Hackathon. This event is designed to give you hands-on experience with the power of the GitHub Copilot desktop application (built on Copilot CLI), exploring features such as parallel agent sessions, custom instructions, Model Context Protocol (MCP) server integration, and automated pull request merging using Agent Merge.
+Welcome to the **GitHub Copilot App** Mini-Hackathon. This event provides hands-on practice with agent-driven workflows, Model Context Protocol (MCP) integrations, and pull request automation.
+
+## How to use this README
+
+- Follow challenges in numeric order.
+- Complete all **Required** challenges, then the **Optional** challenge if time allows.
+- Use the linked workshop guides as your source of truth.
+- Expected outcome: one end-to-end workflow using the GitHub Copilot App, from setup to merge and automation.
+
+## Challenge summary
+
+| Challenge | Time | Optional |
+|---|---:|:---:|
+| Challenge 1 | 20 min | No |
+| Challenge 2 | 20 min | No |
+| Challenge 3 | 20 min | No |
+| Challenge 4 | 30 min | No |
+| Challenge 5 | 20 min | No |
+| Challenge 6 | 20 min | Yes |
+
+## Table of contents
+
+- [Challenge 1: Environment Setup and GitHub Copilot App Installation](#challenge-1-environment-setup-and-github-copilot-app-installation)
+- [Challenge 2: Your First Agent Session and Quick Change](#challenge-2-your-first-agent-session-and-quick-change)
+- [Challenge 3: Guiding the Agent with Custom Instructions](#challenge-3-guiding-the-agent-with-custom-instructions)
+- [Challenge 4: Full Feature Development and Validation with Playwright MCP](#challenge-4-full-feature-development-and-validation-with-playwright-mcp)
+- [Challenge 5: Continuous Integration with Agent Merge and Work Canvases](#challenge-5-continuous-integration-with-agent-merge-and-work-canvases)
+- [Challenge 6: Automate Recurring Tasks with Copilot Automations](#challenge-6-automate-recurring-tasks-with-copilot-automations)
+- [Reference links](#reference-links)
 
 ---
 
 ## Challenge 1: Environment Setup and GitHub Copilot App Installation
 
-* **Title**: Installation, Workspace Connection, and Exploration
-* **Challenge Description**: 
-  Set up your local environment by cloning the Tailspin Toys sample repository and installing the GitHub Copilot desktop application. Connect your repository to the app's workspace to enable agent interactions, review the initial backlog, and prepare for task execution.
-* **Challenge Scenario**: 
-  You are a software developer joining the Tailspin Toys e-commerce team. The team has just adopted the new **GitHub Copilot App** to accelerate delivery through agent-driven development. Your first mission is to set up your local workspace, link the project, and take a tour of the application interface to understand session structures and integrated issue/PR management.
-* **Suggested time to solve**: 20 minutes
-* **Resources**:
-  * [Prerequisites - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/0-prerequisites/)
-  * [Install the Copilot App - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/1-install-copilot-app/)
-  * [GitHub Copilot App Overview Documentation](https://docs.github.com/copilot/concepts/agents/github-copilot-app)
+[Start here](#challenge-1-environment-setup-and-github-copilot-app-installation) · [Next challenge →](#challenge-2-your-first-agent-session-and-quick-change)
+
+### Status
+✅ Required
+
+### Title
+Installation, Workspace Connection, and Exploration
+
+### Description
+Set up your local environment by cloning the Tailspin Toys sample repository and installing the GitHub Copilot App. Connect your repository to the app workspace, review the initial backlog, and prepare for task execution.
+
+### Scenario
+- You are joining the Tailspin Toys e-commerce team.
+- The team has adopted the GitHub Copilot App to accelerate delivery with agent-driven development.
+- Your first objective is to set up your local workspace and learn session and issue/pull request flows.
+
+### Suggested time
+20 minutes
+
+### Resources
+- [Prerequisites][ref-prereq]
+- [Install the GitHub Copilot App][ref-install-app]
+- [GitHub Copilot App overview][ref-copilot-app-overview]
 
 ---
 
 ## Challenge 2: Your First Agent Session and Quick Change
 
-* **Title**: Implementing Star Ratings and Submitting Your First Pull Request
-* **Challenge Description**: 
-  Start an autonomous agent session inside the GitHub Copilot App to request the addition of a star rating component to the Tailspin Toys product view. Allow the agent to generate the necessary code changes and submit your first Pull Request directly from the app.
-* **Challenge Scenario**: 
-  The product team requested a visual star rating display on the product list page. Instead of writing the component from scratch, you will use an agent session in the GitHub Copilot App to delegate the implementation, review the proposed diffs directly within the workspace, and submit the corresponding Pull Request.
-* **Suggested time to solve**: 20 minutes
-* **Resources**:
-  * [Running your first agent session - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/2-add-star-rating/)
-  * [GitHub Copilot App Documentation](https://docs.github.com/copilot/concepts/agents/github-copilot-app)
+[← Previous challenge](#challenge-1-environment-setup-and-github-copilot-app-installation) · [Next challenge →](#challenge-3-guiding-the-agent-with-custom-instructions)
+
+### Status
+✅ Required
+
+### Title
+Implement Star Ratings and Submit Your First Pull Request
+
+### Description
+Start an autonomous agent session in the GitHub Copilot App and request a star rating component on the Tailspin Toys product view. Review the generated changes and submit a pull request from the app.
+
+### Scenario
+- The product team requested a visual star rating display on the product list page.
+- Use an agent session instead of implementing the component manually.
+- Review diffs in the workspace and submit the resulting pull request.
+
+### Suggested time
+20 minutes
+
+### Resources
+- [Run your first agent session][ref-first-agent]
+- [GitHub Copilot App overview][ref-copilot-app-overview]
 
 ---
 
 ## Challenge 3: Guiding the Agent with Custom Instructions
 
-* **Title**: Standardizing Documentation and Code with Custom Instructions
-* **Challenge Description**: 
-  Enforce code and documentation standards across the project using custom instructions (`.github/copilot-instructions.md` or repository instruction settings). Configure the agent to follow these rules when resolving a backlog issue, and verify that the generated code and responses strictly adhere to the defined standards.
-* **Challenge Scenario**: 
-  The lead architect defined new organizational standards for documentation and TypeScript/React code style. To avoid repetitive manual code reviews, you must instruct Copilot on these rules via a *Custom Instructions* file so that any future task executed by the agent automatically aligns with the project guidelines.
-* **Suggested time to solve**: 20 minutes
-* **Resources**:
-  * [Guiding Copilot with custom instructions - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/3-custom-instructions/)
-  * [Adding custom instructions for GitHub Copilot](https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot)
+[← Previous challenge](#challenge-2-your-first-agent-session-and-quick-change) · [Next challenge →](#challenge-4-full-feature-development-and-validation-with-playwright-mcp)
+
+### Status
+✅ Required
+
+### Title
+Standardize Documentation and Code with Custom Instructions
+
+### Description
+Define standards using custom instructions (`.github/copilot-instructions.md` or repository instruction settings). Apply the rules during a backlog task and verify that generated outputs follow them.
+
+### Scenario
+- Your lead architect introduced standards for documentation and TypeScript/React style.
+- Configure custom instructions once to reduce repetitive manual review feedback.
+- Confirm that agent responses and code changes align with the standards.
+
+### Suggested time
+20 minutes
+
+### Resources
+- [Guide Copilot with custom instructions][ref-guide-custom-instructions]
+- [Add custom instructions for GitHub Copilot][ref-add-custom-instructions]
 
 ---
 
 ## Challenge 4: Full Feature Development and Validation with Playwright MCP
 
-* **Title**: Autonomous Product Filtering Development and Testing with MCP
-* **Challenge Description**: 
-  Use the Plan and Autopilot modes within the app to build a full product filtering system. Next, connect the Playwright MCP (Model Context Protocol) server to the application to allow the agent to launch a real browser and run end-to-end verification tests against the newly built feature.
-* **Challenge Scenario**: 
-  Tailspin Toys customers need to filter products by category and price range. Because this feature spans multiple components, you will leverage the planning capabilities of the GitHub Copilot App to breakdown and develop the feature seamlessly. Once implemented, you will use the integrated Playwright MCP server to let the agent launch the browser, interact with the web app, and verify that the filter functions as expected.
-* **Suggested time to solve**: 30 minutes
-* **Resources**:
-  * [Building a feature with Autopilot - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/4-build-filtering/)
-  * [Testing with Playwright MCP - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/5-mcp-playwright/)
-  * [GitHub Copilot & Model Context Protocol (MCP)](https://docs.github.com/copilot/concepts/agents/github-copilot-app)
+[← Previous challenge](#challenge-3-guiding-the-agent-with-custom-instructions) · [Next challenge →](#challenge-5-continuous-integration-with-agent-merge-and-work-canvases)
+
+### Status
+✅ Required
+
+### Title
+Autonomous Product Filtering Development and Testing with MCP
+
+### Description
+Use Plan and Autopilot modes in the GitHub Copilot App to build product filtering. Then connect the Playwright MCP server so the agent can run end-to-end browser checks.
+
+### Scenario
+- Tailspin Toys customers need filtering by category and price range.
+- Build the feature across multiple components with a planning-first workflow.
+- Validate behavior through Playwright MCP browser automation.
+
+### Suggested time
+30 minutes
+
+### Resources
+- [Build a feature with Autopilot][ref-build-autopilot]
+- [Test with Playwright MCP][ref-test-playwright]
+- [MCP in GitHub Copilot App][ref-copilot-app-mcp]
 
 ---
 
 ## Challenge 5: Continuous Integration with Agent Merge and Work Canvases
 
-* **Title**: Automated PR Integration via Agent Merge and Planning with Canvases
-* **Challenge Description**: 
-  Leverage the **Agent Merge** feature in the GitHub Copilot App to handle merge conflicts, run rebases, fix CI failures, and merge the product filtering Pull Request without manual intervention. Finally, create a shared Canvas to map out future iteration steps and recurring automation tasks.
-* **Challenge Scenario**: 
-  Your product filtering PR has conflicts with the main branch and requires updating integration tests due to recent team updates. Instead of manually resolving rebases and fixing tests, assign **Agent Merge** to shepherd the PR through review, fix CI issues, and merge it. Wrap up by organizing your team's workflow using an interactive Canvas workspace.
-* **Suggested time to solve**: 20 minutes
-* **Resources**:
-  * [Merging with Agent Merge - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/6-agent-merge/)
-  * [Planning with canvases - Copilot Workshops](https://github-samples.github.io/copilot-workshops/app/7-canvases/)
-  * [GitHub Copilot App Review & Next Steps](https://github-samples.github.io/copilot-workshops/app/8-review/)
+[← Previous challenge](#challenge-4-full-feature-development-and-validation-with-playwright-mcp) · [Next challenge →](#challenge-6-automate-recurring-tasks-with-copilot-automations)
+
+### Status
+✅ Required
+
+### Title
+Automated Pull Request Integration via Agent Merge and Planning with Canvases
+
+### Description
+Use Agent Merge to resolve conflicts, update CI, and merge the product filtering pull request with minimal manual intervention. Then create a shared canvas for future iteration planning.
+
+### Scenario
+- Your product filtering pull request conflicts with the main branch.
+- Integration tests also need updates based on recent team changes.
+- Use Agent Merge to move the pull request through fixes and merge, then align the team in canvases.
+
+### Suggested time
+20 minutes
+
+### Resources
+- [Merge with Agent Merge][ref-merge-agent-merge]
+- [Plan with canvases][ref-plan-canvases]
+- [Review and next steps][ref-review-next-steps]
 
 ---
-## Challenge 6 *(Optional)*: Automate Recurring Tasks with Copilot Automations
-* **Title**: Scheduling and Running Copilot Automations for Recurring Team Tasks
-* **Challenge Description**: 
-  Use the **Automations** feature in the GitHub Copilot App to define, schedule, and run recurring agent tasks without manual intervention. Create at least one automation that triggers on a schedule or in response to a repository event, configure the tools it may use, and verify it executes correctly—either on demand or at its next scheduled interval.
-* **Challenge Scenario**: 
-  The Tailspin Toys team is growing and manual housekeeping tasks—such as triaging new issues, checking for failing tests, and drafting weekly release notes—are taking up valuable developer time. As the team's DevOps lead, your mission is to offload these recurring tasks to Copilot by creating automations. You will define the prompt, choose the right trigger (schedule or event), select the minimum required tools following a least-privilege approach, and optionally enable cloud execution so the automation runs even when your laptop is off.
-* **Suggested time to solve**: 20 minutes
-* **Tasks**:
-  1. Open the **Automations** tab in the GitHub Copilot App (or navigate to the **Agents** tab → **Automations** pane in your repository on GitHub).
-  2. Click **New automation** and give it a descriptive name (e.g., *"Daily issue triage"* or *"Nightly failing-test fix"*).
-  3. Select a **trigger**: choose *On a schedule* (hourly, daily, or weekly) **or** *When an issue is created* with an optional search-query filter.
-  4. Optionally enable **Run in the cloud** so the automation runs in a cloud environment independent of your local machine.
-  5. Use the **Tools** dropdown to select only the tools the task requires (e.g., *update issue labels*, *create a pull request*). Apply the principle of least privilege.
-  6. Write a clear **prompt** describing the exact task (e.g., *"Label each new issue as bug, enhancement, or question based on its content"*).
-  7. Click **Create and run** to save the automation and trigger an immediate test run.
-  8. Review the resulting Copilot cloud agent session logs to confirm the automation performed the expected actions.
-* **Resources**:
-  * [Using automations in the GitHub Copilot app](https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations)
-  * [About Copilot automations](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations)
-  * [Creating automations with Copilot cloud agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations)
-  * [GitHub Copilot App Review & Next Steps](https://github-samples.github.io/copilot-workshops/app/8-review/)
+
+## Challenge 6: Automate Recurring Tasks with Copilot Automations
+
+[← Previous challenge](#challenge-5-continuous-integration-with-agent-merge-and-work-canvases)
+
+### Status
+🟡 Optional
+
+### Title
+Schedule and Run Copilot Automations for Recurring Team Tasks
+
+### Description
+Use GitHub Copilot App automations to define and run recurring tasks. Create at least one schedule- or event-driven automation, assign least-privilege tools, and confirm successful execution.
+
+### Scenario
+- The Tailspin Toys team spends too much time on repetitive project housekeeping.
+- Common examples include issue triage, failing-test checks, and release-note drafting.
+- Create automations to offload this work to agents.
+
+### Suggested time
+20 minutes
+
+### Tasks
+1. Open the **Automations** tab in the GitHub Copilot App (or **Agents** → **Automations** in GitHub).
+2. Select **New automation** and set a clear name.
+3. Pick a trigger: scheduled run or issue-created event with optional filtering.
+4. Optionally enable **Run in the cloud**.
+5. Select only the minimum required tools.
+6. Write a clear prompt describing the task outcome.
+7. Choose **Create and run** for an immediate test run.
+8. Review the cloud agent session logs and confirm expected behavior.
+
+### Resources
+- [Use automations in the GitHub Copilot App][ref-use-automations]
+- [About Copilot automations][ref-about-automations]
+- [Create automations with Copilot cloud agent][ref-create-automations]
+- [Review and next steps][ref-review-next-steps]
+
+---
+
+## Reference links
+
+- [ref-prereq]: https://github-samples.github.io/copilot-workshops/app/0-prerequisites/
+- [ref-install-app]: https://github-samples.github.io/copilot-workshops/app/1-install-copilot-app/
+- [ref-copilot-app-overview]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
+- [ref-first-agent]: https://github-samples.github.io/copilot-workshops/app/2-add-star-rating/
+- [ref-guide-custom-instructions]: https://github-samples.github.io/copilot-workshops/app/3-custom-instructions/
+- [ref-add-custom-instructions]: https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
+- [ref-build-autopilot]: https://github-samples.github.io/copilot-workshops/app/4-build-filtering/
+- [ref-test-playwright]: https://github-samples.github.io/copilot-workshops/app/5-mcp-playwright/
+- [ref-copilot-app-mcp]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
+- [ref-merge-agent-merge]: https://github-samples.github.io/copilot-workshops/app/6-agent-merge/
+- [ref-plan-canvases]: https://github-samples.github.io/copilot-workshops/app/7-canvases/
+- [ref-review-next-steps]: https://github-samples.github.io/copilot-workshops/app/8-review/
+- [ref-use-automations]: https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations
+- [ref-about-automations]: https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations
+- [ref-create-automations]: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations
