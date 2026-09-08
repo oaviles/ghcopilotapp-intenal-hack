@@ -28,7 +28,6 @@ Welcome to the **GitHub Copilot App** Mini-Hackathon. This event provides hands-
 - [Challenge 4: Full Feature Development and Validation with Playwright MCP](#challenge-4-full-feature-development-and-validation-with-playwright-mcp)
 - [Challenge 5: Continuous Integration with Agent Merge and Work Canvases](#challenge-5-continuous-integration-with-agent-merge-and-work-canvases)
 - [Challenge 6: Automate Recurring Tasks with Copilot Automations](#challenge-6-automate-recurring-tasks-with-copilot-automations)
-- [Reference links](#reference-links)
 
 ---
 
@@ -39,7 +38,6 @@ Welcome to the **GitHub Copilot App** Mini-Hackathon. This event provides hands-
 ### Status
 ✅ Required
 
-### Title
 Installation, Workspace Connection, and Exploration
 
 ### Description
@@ -67,7 +65,6 @@ Set up your local environment by cloning the Tailspin Toys sample repository and
 ### Status
 ✅ Required
 
-### Title
 Implement Star Ratings and Submit Your First Pull Request
 
 ### Description
@@ -94,7 +91,6 @@ Start an autonomous agent session in the GitHub Copilot App and request a star r
 ### Status
 ✅ Required
 
-### Title
 Standardize Documentation and Code with Custom Instructions
 
 ### Description
@@ -121,7 +117,6 @@ Define standards using custom instructions (`.github/copilot-instructions.md` or
 ### Status
 ✅ Required
 
-### Title
 Autonomous Product Filtering Development and Testing with MCP
 
 ### Description
@@ -149,7 +144,6 @@ Use Plan and Autopilot modes in the GitHub Copilot App to build product filterin
 ### Status
 ✅ Required
 
-### Title
 Automated Pull Request Integration via Agent Merge and Planning with Canvases
 
 ### Description
@@ -177,7 +171,6 @@ Use Agent Merge to resolve conflicts, update CI, and merge the product filtering
 ### Status
 🟡 Optional
 
-### Title
 Schedule and Run Copilot Automations for Recurring Team Tasks
 
 ### Description
@@ -208,21 +201,3 @@ Use GitHub Copilot App automations to define and run recurring tasks. Create at 
 - [Review and next steps][ref-review-next-steps]
 
 ---
-
-## Reference links
-
-- [ref-prereq]: https://github-samples.github.io/copilot-workshops/app/0-prerequisites/
-- [ref-install-app]: https://github-samples.github.io/copilot-workshops/app/1-install-copilot-app/
-- [ref-copilot-app-overview]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
-- [ref-first-agent]: https://github-samples.github.io/copilot-workshops/app/2-add-star-rating/
-- [ref-guide-custom-instructions]: https://github-samples.github.io/copilot-workshops/app/3-custom-instructions/
-- [ref-add-custom-instructions]: https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
-- [ref-build-autopilot]: https://github-samples.github.io/copilot-workshops/app/4-build-filtering/
-- [ref-test-playwright]: https://github-samples.github.io/copilot-workshops/app/5-mcp-playwright/
-- [ref-copilot-app-mcp]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
-- [ref-merge-agent-merge]: https://github-samples.github.io/copilot-workshops/app/6-agent-merge/
-- [ref-plan-canvases]: https://github-samples.github.io/copilot-workshops/app/7-canvases/
-- [ref-review-next-steps]: https://github-samples.github.io/copilot-workshops/app/8-review/
-- [ref-use-automations]: https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations
-- [ref-about-automations]: https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations
-- [ref-create-automations]: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations
